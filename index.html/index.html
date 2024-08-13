@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Stevsite  Programming</title>
+<link rel="icon" href="favicon2.webp">
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://getbootstrap.com/">
+
+<link rel="preconnect" href="https://AK7KMZKZHQ-dsn.algolia.net" crossorigin>
+
+<script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<link href="/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@getbootstrap">
+<meta name="twitter:creator" content="@getbootstrap">
+<meta name="twitter:title" content="Bootstrap">
+<meta name="twitter:description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
+<meta name="twitter:image" content="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-social.png">
+
+<meta property="og:url" content="https://getbootstrap.com/">
+<meta property="og:title" content="Bootstrap">
+<meta property="og:description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-social.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="2000">
+<meta property="og:image:height" content="1000">
+
+<script defer src="https://cdn.usefathom.com/script.js" data-site="ITUSEYJG"></script>
+
+<script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-146052-10', 'getbootstrap.com');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+  
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightblue;
+        }
+        .content {
+          
+            height: auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {font-family: Arial, Helvetica, sans-serif}
+* {box-sizing: border-box;}
+
+.bg-img {
+  /* The image used */
+ 
+  
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 0px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(99, 100, 104);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+
+  font-family: Helvetica, sans-serif;
+  padding: auto;
+  font-size: 17px;
+  
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color:   #474e5d;;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 1px solid white;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent   #474e5d;;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent    #474e5d;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+
+
+
+
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url(".jpg");
+
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(1px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60%; 
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+  width: 100%;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+
+
+
+
+.zoom {
+  
+  transition: transform .5s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+
+
+body {
+ 
+  background-color: white;
+  color: black;
+  font-size: 17px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("aquino4.jpg");
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  padding-left: 80px;
+  
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: left;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+  
+  body, html {
+    height: 100%;
+ 
+  }
+  
+  /* Full height image header */
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("aquino4.jpg");
+    min-height: 100%;
+  }
+  
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+  </style>
+  </head>
+  
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top"  >
+    <div class="w3-bar w3-white w3-card" id="myNavbar"  style="height: 100%;">
+      <a href="#home" class="w3-bar-item w3-button w3-wide">
+        <a  href="#" >
+          <img src="favicon2.webp" alt="Avatar Logo" style="width: 30px; border-radius: 25px;  padding-top: 10px;   " ></a >STEVSITE PROGRAMMING COMPANY</a>
+      <!-- Right-sided navbar links -->
+       
+      <div class="w3-right  ">
+        <a href="https://www.youtube.com/watch?v=XV1cOGaZUq0&t=937s" class="w3-bar-item w3-button"><i class="fa fa-user"></i> MORE</a>
+        <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT
+
+         
+        </a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  
+   
+      </a>
+    </div>
+  </div>
+  
+
+  
+  <!-- Header with full-height image -->
+  <header class="bgimg-1 w3-display-container w3-blackscale-min" id="home">
+    <div class="w3-display-left w3-text-white" >
+<span>
+  <h5 style="font-size:48px; font-weight: bold; font-family: 'Times New Roman', Times, serif; "  class="  w3-container  w3-animate-bottom"  >WELCOME TO STEVSITE </h5>
+</span>
+
+<span>
+  <h5 style="font-size:40px;   font-weight: bold;  font-family: 'Times New Roman', Times, serif;"  class="w3-container  w3-animate-bottom">PROGRAMMING</h5>
+</span>
+<span>
+  <p style="padding-left: 20px;  font-size: 20px;" >Learning more about different languages like Bootstrap , Javascript & Html </p>
+
+</span>
+    
+     
+
+      <span class="w3-large" style="padding-left: 20px;  ">Stop wasting valuable time with projects .</span>
+      <p  style="padding-left: 20px;"><a href="#about" class="w3-button w3-blue w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off" >Learn more and start today</a></p>
+    </div> 
+    <div class="w3-display-bottomleft  w3-large" style="padding:24px 48px;" >
+      <i class="fa fa-facebook-official w3-hover-opacity"  style="color: white;"></i>
+      <i class="fa fa-instagram w3-hover-opacity" style="color: white;"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"  style="color: white;"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"  style="color: white;"></i>
+      <i class="fa fa-twitter w3-hover-opacity" style="color: white;"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"  style="color: white;"></i>
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top" style="border-radius: 40px;  "> Scroll Top</button>
+
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script><br><br>
+
+
+
+
+<div class="container-xxl bd-gutter masthead-followup">
+  <div class="col-lg-7 mx-auto pb-3 mb-3 mb-md-5 text-md-center">
+<div class="masthead-followup-icon d-inline-block mb-3" style="--bg-rgb: var(--bd-violet-rgb);">
+<svg class="bi fs-1"><use xlink:href="#code"></use></svg>
+</div>
+<h2 class="display-5 mb-3 fw-semibold lh-sm" style=" color: rgb(38, 38, 92);">Get started any way you&nbsp;want</h2>
+<p class="lead fw-normal  w3-text-grey w3-hide-medium">
+Jump right into building with Bootstrap—use the CDN, install it via package manager, or download the source code.
+</p>
+<p class="d-flex justify-content-md-start justify-content-md-center lead fw-normal">
+<a href="https://www.geeksforgeeks.org/bootstrap/" class="icon-link icon-link-hover fw-semibold ps-md-4" style="color: blue;">
+  Read installation docs
+  <svg class="bi"><use xlink:href="#arrow-right"></use></svg>
+</a>
+</p>
+</div>
+
+
+
+
+<!-- Start Content -->
+<div id="home" class="w3-content">
+
+  <!-- Image in Display Container-->
+  <!-- About -->
+  <div id="about" class="w3-padding-top-64">
+  <div class="w3-row">
+  
+  <div class="w3-half w3-padding-large">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+
+
+
+<div class="w3-content w3-section  w3-round w3-image w3-opacity-min" style="max-width:500px">
+  <img class="mySlides w3-animate-left" src="aquino1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="campny1.jpeg" style="width:100%">
+  <img class="mySlides w3-animate-right" src="photo4.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="aquino8.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+</script>
+  </div>
+
+
+  
+  
+  <div class="w3-half w3-padding-large  " >
+  <h2  style="font-family: 'Times New Roman', Times, serif; color:  rgb(59, 59, 131); font-weight: bold; text-align: left; " class="https://stevwebsitedomain.github.io/Stevsite-Programming_SS.P/">Visit Stevsite Programming  </h2>
+  <h5 class="w3-large  w3-hide-medium"  style="color:  bold;  color: rgb(59, 59, 131);">Learning More from Stevsite company</h5>
+  <p class=" lead mb-4  w3-text-grey w3-hide-medium"  style="font-size: 15px;">
+    My name is Steven Makarious. I am a software developer who develops and hosts websites. Welcome to my company, Stevsite Programming,
+    where you can learn various programming languages. Keep exploring and learning on my website. Welcome!.</p>
+  <p class="lead mb-4  w3-text-grey w3-hide-medium" style="font-size: 16px;">
+    There are several aspects that are included and explained on this website.  
+    Another thing is that we help various people design their websites and make them look great.</p>
+
+    <p >
+      <ul class=" lead mb-4  w3-text-grey w3-hide-medium"  style="font-size: 15px;">
+        <li> Explanation about experiences and different techniques about websites.</li>
+        <li> Teaching how can you create website through different languages.</li>
+        <li> How you can host website and which application can involve in hosting website.</li> 
+     </ul></p>
+
+
+  </div>
+  
+  </div>
+  </div>
+  
+  <!-- End Content -->
+  </div><br><br>
+
+
+
+
+
+
+
+
+  <section class="row g-3 g-md-5 mb-5 pb-5 justify-content-center ">
+    <div class="col-lg-6 py-lg-4 pe-lg-5">
+
+      
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16" style="color: blue;">
+    <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+    </svg>
+
+    
+      <h3 class="fw-semibold  " style=" color: rgb(59, 59, 131);">Install via package manager</h3>
+      <p class="pe-lg-5">
+        Install Bootstrap’s source Sass and JavaScript files via npm, RubyGems, Composer, or Meteor. Package managed installs don’t include documentation or our full build scripts. You can also <a href="https://github.com/twbs/examples/">use any demo from our Examples repo</a> to quickly jumpstart Bootstrap projects.
+      </p>
+      <div class="highlight bg-light" style="height: 17%; padding: 20px; border-radius: 4px; border-style: outset;"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl" style="color: rgb(58, 123, 243);" >npm install bootstrap@5.3.3</span></span></code></pre></div><br>
+      <div class="highlight bg-light" style="height: 17%; padding: 20px;border-radius: 4px; border-style: outset;"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"  style="color: rgb(58, 123, 243);;">gem install bootstrap -v 5.3.3</span></span></code></pre></div>
+      <p>
+        <a href="/docs/5.3/getting-started/download/">Read our installation docs</a> for more info and additional package managers.
+      </p>
+    </div>
+    <div class="col-lg-6 py-lg-4 ps-lg-5 border-lg-start">
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16"  style="color: blue;">
+        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+      </svg>
+
+      <h3 class="fw-semibold " style=" color: rgb(59, 59, 131);">Include via CDN</h3>
+      <p class="pe-lg-5">
+        When you only need to include Bootstrap’s compiled CSS or JS, you can use <a href="https://www.jsdelivr.com/package/npm/bootstrap">jsDelivr</a>. See it in action with our simple <a href="/docs/5.3/getting-started/introduction/#quick-start">quick start</a>, or <a href="/docs/5.3/examples/">browse the examples</a> to jumpstart your next project. You can also choose to include Popper and our JS <a href="/docs/5.3/getting-started/introduction/#separate">separately</a>.
+      </p>
+      
+      <div class="highlight  bg-light"  style="height: 19%; color: rgb(58, 123, 243); padding: 19px; border-style: outset; border-radius: 5px;"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt"><span  style="color: rgb(236, 69, 69);">link</span></span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;</span></span></span></code></pre></div><br>
+      <div class="highlight  bg-light"   style="height: 19%; color: rgb(58, 123, 243);  padding: 19px;  border-style: outset; border-radius: 5px;"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt"><span   style="color: rgb(236, 69, 69);">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></span></span></code></pre></div>
+    </div>
+  
+    <div class="col-md-8 mx-auto text-center">
+      <h4 class="fw-semibold"  style=" color: rgb(59, 59, 131);">Read our getting started guides</h4>
+      <p>Get a jump on including Bootstrap's source files in a new project with our official guides.</p>
+      <div class="d-flex flex-wrap align-items-center justify-content-center gap-4 mt-4">
+        <a class="d-flex flex-column align-items-center text-decoration-none animate-img" href="/docs/5.3/getting-started/webpack/">
+
+          <img class="d-block mb-2  " src="webpack.png" alt="" width="82" height="72" loading="lazy">
+          <span class="text-body-secondary">Webpack</span>
+        </a>
+        <a class="d-flex flex-column align-items-center text-decoration-none animate-img" href="/docs/5.3/getting-started/parcel/">
+          
+          <img class="d-block mb-2 " src="parcel.jpeg" alt="" width="85" height="72" loading="lazy">
+          <span class="text-body-secondary">Parcel</span>
+        </a>
+        <a class="d-flex flex-column align-items-center text-decoration-none animate-img" href="/docs/5.3/getting-started/vite/">
+          <img class="d-block mb-2  " src="vite.jpeg" alt="" width="70" height="70" loading="lazy">
+          <span class="text-body-secondary">Vite</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  
+
+
+  <section class="row g-md-5 mb-5 pb-md-5 ">
+    <div class="col-lg-6  ">
+      <h3 style=" color: rgb(59, 59, 131); font-weight: bold;">Include all of Bootstrap’s Sass</h3>
+      <p>Import one stylesheet and you're off to the races with every feature of our CSS.</p>
+      <div class="highlight bg-light  w3-medium w3-text-grey w3-hide-medium " style="border-style: ridge;  padding: 15px; padding-top: 35px; border-radius: 5px;"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="c1">// Variable overrides first
+  </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv"  style="color: rgb(253, 55, 55);">$primary</span><span class="o">:</span> <span class="mh"  style="color: darkblue;">#900</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl"><span class="nv"   style="color: rgb(253, 55, 55);">$enable-shadows</span><span class="o">:</span> <span class="n"  style="color:  rgb(253, 55, 55);">true</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl"><span class="nv"  style="color: rgb(253, 55, 55);">$prefix</span><span class="o">:</span> <span class="s2"  style="color: darkblue;">&#34;mo-&#34;</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl">
+  </span></span><span class="line"><span class="cl"><span class="c1">// Then import Bootstrap
+  </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k" style="color: rgb(197, 104, 104);">@import</span> <span class="s2" style="color: darkblue;">&#34;../node_modules/bootstrap/scss/bootstrap&#34;</span><span class="p">;</span>
+  </span></span></code></pre></div>
+      <p>Learn more about our <a href="/docs/5.3/customize/options/">global Sass options</a>.</p>
+    </div>
+    <div class="col-lg-6">
+      <h3  style=" color: rgb(59, 59, 131);font-weight: bold;">Include what you need</h3>
+      <p>The easiest way to customize Bootstrap—include only the CSS you need.</p>
+  <div class="highlight  bg-light  w3-medium w3-text-grey w3-hide-medium " style="border-style: ridge; padding: 10px; padding-top: 40px; border-radius: 5px;"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="c1">// Functions first
+  </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k"  style="color:  rgb(209, 62, 62);">@import</span> <span class="s2"  style="color: darkblue;">&#34;../node_modules/bootstrap/scss/functions&#34;</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl">
+  </span></span><span class="line"><span class="cl"><span class="c1">// Variable overrides second
+  </span></span></span><span class="line"><span class="cl"><span class="c1" style="color: rgb(253, 55, 55);"></span><span class="nv" style="color: rgb(253, 55, 55);">$primary</span><span class="o">:</span> <span class="mh" style="color: darkblue;">#900</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl"><span class="nv" style="color: rgb(253, 55, 55);">$enable-shadows</span><span class="o">:</span> <span class="n" style="color:  rgb(253, 55, 55);">true</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl"><span class="nv" style="color: rgb(253, 55, 55);">$prefix</span><span class="o">:</span> <span class="s2"  style="color: darkblue;">&#34;mo-&#34;</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl">
+  </span></span><span class="line"><span class="cl"><span class="c1">// Required Bootstrap imports
+  </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k"  style="color:  rgb(197, 104, 104);">@import</span> <span class="s2" style="color: darkblue;">&#34;../node_modules/bootstrap/scss/variables&#34;</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl"><span class="k"  style="color: rgb(197, 104, 104);">@import</span> <span class="s2" style="color: darkblue;">&#34;../node_modules/bootstrap/scss/variables-dark&#34;</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl"><span class="k"  style="color:  rgb(197, 104, 104);">@import</span> <span class="s2"  style="color: darkblue;">&#34;../node_modules/bootstrap/scss/maps&#34;</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl"><span class="k"  style="color:   rgb(197, 104, 104);" >@import</span> <span class="s2"   style="color: darkblue;">&#34;../node_modules/bootstrap/scss/mixins&#34;</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl"><span class="k"  style="color:   rgb(197, 104, 104);">@import</span> <span class="s2"  style="color: darkblue;">&#34;../node_modules/bootstrap/scss/root&#34;</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl">
+  </span></span><span class="line"><span class="cl"><span class="c1">// Optional components
+  </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k" style="color:   rgb(197, 104, 104);">@import</span> <span class="s2"  style="color: darkblue;">&#34;../node_modules/bootstrap/scss/utilities&#34;</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl"><span class="k"  style="color:   rgb(197, 104, 104);">@import</span> <span class="s2"   style="color: darkblue;">&#34;../node_modules/bootstrap/scss/reboot&#34;</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl"><span class="k"  style="color:   rgb(197, 104, 104);">@import</span> <span class="s2"  style="color: darkblue;">&#34;../node_modules/bootstrap/scss/containers&#34;</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl"><span class="k"  style="color:  rgb(197, 104, 104);">@import</span> <span class="s2"  style="color: darkblue;">&#34;../node_modules/bootstrap/scss/grid&#34;</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl"><span class="k"  style="color:   rgb(197, 104, 104);">@import</span> <span class="s2"  style="color: darkblue;">&#34;../node_modules/bootstrap/scss/helpers&#34;</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl"><span class="k"  style="color:   rgb(197, 104, 104);">@import</span> <span class="s2"  style="color: darkblue;">&#34;../node_modules/bootstrap/scss/utilities/api&#34;</span><span class="p">;</span>
+  </span></span></code></pre></div>
+      <p>Learn more about <a href="/docs/5.3/customize/sass/">using Bootstrap with Sass</a>.</p>
+    </div>
+  </section>
+
+
+
+
+
+  
+    <section class="row g-md-5 pb-md-5 mb-5 align-items-center"  style="padding-top: 2px;">
+    <div class="col-lg-8 mb-5">
+      <div class="masthead-followup-icon d-inline-block mb-3" style="--bg-rgb: var(--bd-pink-rgb);">
+        <svg class="bi fs-1"><use xlink:href="#braces"></use></svg>
+      </div>
+
+      <div >
+        <img src="favicon2.webp"  style=" width: 49%; height: 49%; ">
+      </div>
+    
+      <h2 class="display-5 mb-3 fw-semibold lh-sm"  style=" color: rgb(59, 59, 131);">Build and extend in real-time with CSS&nbsp;variables</h2>
+      <p class="lead fw-normal "  style="font-size: 16px;">
+        Bootstrap 5 is evolving with each release to better utilize CSS variables for global theme styles, individual components, and even utilities. We provide dozens of variables for colors, font styles, and more at a <code>:root</code> level for use anywhere. On components and utilities, CSS variables are scoped to the relevant class and can easily be modified.
+      </p>
+      <p class="d-flex align-items-start flex-column lead fw-normal mb-0">
+        <a href="/docs/5.3/customize/css-variables/" class="icon-link icon-link-hover fw-semibold mb-3"  style="color:  royalblue;">
+          Learn more about CSS variables
+          <svg class="bi"><use xlink:href="#arrow-right"></use></svg>
+        </a>
+      </p>
+    </div>
+    <div class="row gx-md-5">
+      <div class="col-lg-6 mb-3">
+        <h3 class="fw-semibold"  style=" color: rgb(59, 59, 131);">Using CSS variables</h3>
+        <p>Use any of our <a href="/docs/5.3/customize/css-variables/#root-variables">global <code>:root</code> variables</a> to write new styles. CSS variables use the <code>var(--bs-variableName)</code> syntax and can be inherited by children elements.</p>
+        <div class="highlight  w3-medium  bg-light" style="padding: 20px; font-size: 17px;"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nc"  style="color: green;">.component</span> <span class="p">{</span>
+  </span></span><span class="line"><span class="cl">  <span class="na" style="color: rgb(26, 26, 201);">color</span><span class="o">:</span> <span class="nf"  style="color:rgb(241, 111, 111);">var</span><span class="p">(</span><span class="o">--</span><span class="n" style="color:rgb(241, 111, 111);">bs-gray-800</span><span class="p">);</span>
+  </span></span><span class="line"><span class="cl">  <span class="na" style="color: rgb(26, 26, 201);">background-color</span><span class="o">:</span> <span class="nf"  style="color: rgb(26, 26, 201);">var</span><span class="p">(</span><span class="o">--</span><span class="n"  style="color:rgb(241, 111, 111);">bs-gray-100</span><span class="p">);</span>
+  </span></span><span class="line"><span class="cl">  <span class="na" style="color: rgb(26, 26, 201);">border</span><span class="o">:</span> <span class="mi" style="color: rgb(26, 26, 201);">1</span><span class="kt" style="color: rgb(26, 26, 201);">px</span> <span class="ni" style="color:rgb(241, 111, 111);">solid</span> <span class="nf" style="color: rgb(26, 26, 201);" >var</span>
+  <span class="p">(</span><span class="o">--</span><span class="n" style="color:rgb(241, 111, 111);">bs-gray-200</span><span class="p">);</span>
+
+  
+  </span></span><span class="line"><span class="cl">  <span class="na" style="color: rgb(26, 26, 201);">border-radius</span><span class="o">:</span> <span class="mf"   style="color:rgb(241, 111, 111);">.25</span><span class="kt"  style="color:rgb(241, 111, 111);">rem</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl"><span class="p">}</span>
+  </span></span><span class="line"><span class="cl">
+  </span></span><span class="line"><span class="cl"><span class="nc" style="color: green;">.component-header</span> <span class="p">{</span>
+  </span></span><span class="line"><span class="cl">  <span class="na" style="color: rgb(26, 26, 201);">color</span><span class="o">:</span> <span class="nf" style="color: rgb(26, 26, 201);">var</span><span class="p">(</span><span class="o">--</span><span class="n" style="color:rgb(241, 111, 111);">bs-purple</span><span class="p">);</span>
+  </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+      <div class="col-lg-6 mb-3">
+        <h3 class="fw-semibold" style=" color: rgb(59, 59, 131);">Customizing via CSS variables</h3>
+        <p>Override global, component, or utility class variables to customize Bootstrap just how you like. No need to redeclare each rule, just a new variable value.</p>
+        <div class="highlight  w3-medium bg-light" style="padding: 20px; font-size: 17px;"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nt"  style="color:rgb(241, 111, 111);">body</span> <span class="p">{</span>
+  </span></span><span class="line"><span class="cl">  <span class="na" style="color: rgb(26, 26, 201);">--bs-body-font-family</span><span class="o">:</span> <span class="nf" style="color: rgb(26, 26, 201);">var</span><span class="p">(</span><span class="o">--</span><span class="n"  style="color:rgb(241, 111, 111);">bs-font-monospace</span><span class="p">);</span>
+  </span></span><span class="line"><span class="cl">  <span class="na" style="color: rgb(26, 26, 201);">--bs-body-line-height</span><span class="o">:</span> <span class="mi" style="color: green;">1</span><span class="mf">.4</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl">  <span class="na" style="color: rgb(26, 26, 201);">--bs-body-bg</span><span class="o">:</span> <span class="nf" style="color: rgb(26, 26, 201);">var</span><span class="p">(</span><span class="o">--</span><span class="n" style="color:rgb(241, 111, 111);">body>bs-gray-100</span><span class="p">);</span>
+  </span></span><span class="line"><span class="cl"><span class="p">}</span>
+  </span></span><span class="line"><span class="cl">
+  </span></span><span class="line"><span class="cl"><span class="nc"  style="color: green;">.table</span> <span class="p">{</span>
+  </span></span><span class="line"><span class="cl">  <span class="na"  style="color: rgb(26, 26, 201);">--bs-table-color</span><span class="o">:</span> <span class="nf" style="color: rgb(26, 26, 201);" >var</span><span class="p">(</span><span class="o">--</span><span class="n" style="color:rgb(241, 111, 111);">body>bs-gray-600</span><span class="p">);</span>
+  </span></span><span class="line"><span class="cl">  <span class="na"  style="color: rgb(26, 26, 201);">--bs-table-bg</span><span class="o">:</span> <span class="nf" style="color: rgb(26, 26, 201);">var</span><span class="p">(</span><span class="o">--</span><span class="n" style="color:rgb(241, 111, 111);">bs-gray-100</span><span class="p">);</span>
+  </span></span><span class="line"><span class="cl">  <span class="na" style="color: rgb(26, 26, 201);">--bs-table-border-color</span><span class="o">:</span> <span class="ni"  style="color:rgb(241, 111, 111);">transparent</span><span class="p">;</span>
+  </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+	
+	<!-- Add the Bootstrap CSS link -->
+	<link href= 
+"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+		rel="stylesheet"> 
+
+
+    <div class="w3-padding-64 ">
+      <div class="w3-row-padding">
+        <div class="w3-col l4 m6">
+          <img class="w3-image w3-round-large " src="all.png" alt="App" width="320" height="450">
+        </div>
+        <div class="w3-col l8 m6  ">
+          <h2 class="w3-jumbo  "><b  style=" color: rgb(59, 59, 131);">Bootstrap , JavaScript & Html</b></h2>
+          <h1 class="w3-xxxlarge w3-text-red"  ><b>Learn More</b></h1>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+<div  style="background-color: rgb(249, 250, 252);" >
+	<div class="container  mt-4"> 
+
+		<div class="row"> 
+			<div class="col-md-4"> 
+				<div> 
+					<img src= 
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230310132605/Bootstrap-Tutorial.jpg"
+						alt="Image 1"
+						class="card-img-top  w3-card w3-hover-shadow"> 
+
+
+					<div class="card-body  "   ><br> 
+						<h5 class="card-title"  style=" color: rgb(59, 59, 131);">BOOTSTRAP 5</h5><br>
+						<p class="card-text  w3-medium w3-text-grey w3-hide-medium"  class="w3-container w3-center w3-animate-bottom w3-opacity  " > 
+							Bootstrap is a widely-used open-source 
+							front-end framework for web development, 
+							providing a collection of HTML, CSS, and 
+							JavaScript components and tools that 
+							enable developers to build responsive, 
+							mobile-first websites with ease1..... </p>
+
+             <p  class="card-text w3-medium w3-text-grey w3-hide-medium">
+                Download Bootstrap to get the compiled CSS and JavaScript,
+              source code, or include it with your favorite package managers like npm, RubyGems, and more.
+						</p> 
+
+
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: royalblue;
+}
+</style>
+</head>
+
+<h2   style=" color: rgb(59, 59, 131);" >Download Bootstrap App</h2>
+
+<p    style=" color: rgb(59, 59, 131);">Download here:</p>
+
+<button class="w3-button  w3-padding-large  w3-card w3-hover-shadow" style="background-color: rebeccapurple;" onclick="document.getElementById('download').style.display='block'" class="fa fa-download" ><a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" style="text-decoration: none; color: white;">LEARN MORE</a></button>
+
+
+
+					</div> 
+				</div> 
+			</div>
+
+
+
+
+
+
+      
+			<div class="col-md-4"> 
+				<div > 
+					<img src= 
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
+						alt="Image 2"  height="247px"
+						class="card-img-top w3-card w3-hover-shadow">
+            
+            
+					<div class="card-body"><br> 
+						<h5 class="card-title"   style=" color: rgb(59, 59, 131);"> 
+							JAVASCRIPT
+						</h5><br>
+						<p class="card-text  w3-medium w3-text-grey w3-hide-medium"> 
+						
+              JavaScript (JS) is a lightweight interpreted (or just-in-time compiled) programming language with first-class functions. 
+              While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. 
+  
+            </p>
+
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Add icon library -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style>
+            .btn {
+              background-color: green;
+              border: none;
+              color: white;
+              padding: 12px 30px;
+              cursor: pointer;
+              font-size: 20px;
+            }
+            
+            /* Darker background on mouse-over */
+            .btn:hover {
+              background-color: royalblue;
+            }
+            </style>
+            </head>
+            
+            <h2  style=" color: rgb(59, 59, 131);">Download Javascript App</h2>
+            
+            <p   style=" color: rgb(59, 59, 131);" >Download here:</p>
+
+            <button class="w3-button w3-green w3-padding-large  w3-card w3-hover-shadow" onclick="document.getElementById('download').style.display='block'" class="fa fa-download" ><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" style="text-decoration: none; color: white;">LEARN MORE</a></button>
+
+
+					</div> 
+				</div> 
+			</div> 
+
+
+
+
+
+
+			<div class="col-md-4  "> 
+				<div > 
+
+          
+					<img src= 
+                   "html-favicon.jpg"
+						alt="Image 3" class="card-img-top  w3-card w3-hover-shadow"  style="height: 100%;  width: 100%;"> 
+
+					<div class="card-body  "><br>
+						<h5 class="card-title"   style=" color: rgb(59, 59, 131);"> 
+							HTML
+						</h5><br>
+						<p class="card-text w3-medium w3-text-grey w3-hide-medium"> 
+							HTML stands for Hyper Text Markup Language
+              HTML is the standard markup language for creating Web pages
+              HTML describes the structure of a Web page
+              HTML consists of a series of elements
+              HTML elements tell the browser how to display the content
+              HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+						</p> 
+
+
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Add icon library -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style>
+            .btn {
+              background-color: green;
+              border: none;
+              color: white;
+              padding: 12px 30px;
+              cursor: pointer;
+              font-size: 20px;
+           
+            }
+            
+            /* Darker background on mouse-over */
+            .btn:hover {
+              background-color: royalblue;
+            }
+            </style>
+            </head>
+            
+            <h2  style=" color:  rgb(59, 59, 131);" >Download html App</h2>
+            
+            <p   style=" color: rgb(59, 59, 131);">Download here:</p>
+
+            <button class="w3-button w3-blue w3-padding-large w3-card w3-hover-shadow" onclick="document.getElementById('download').style.display='block'" class="fa fa-download" ><a href="https://html.com/" style="text-decoration: none; color: white;">LEARN MORE</a></button>
+
+
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+	</div> 
+
+</div>
+
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+
+
+
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+
+  min-height: 100%;
+}
+
+
+</style>
+</head>
+
+
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center "  style="color: rgb(59, 59, 131);">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p >You don't need to download or install anything on any device to create a website. See all the changes as you make them and have perfect control over your site's content and look.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Find out where your visitors come from and who shared a link to your website. See who typed your address directly or who found you through organic searching.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Each design comes with prepared content that helps you build your own website. You also have the freedom to change anything you want.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>We reply in your language within 24 hours
+        Our friendly and helpful customer support team speaks more than 20 languages and is available 5 days a week to lend a helping hand anytime you need.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+ <!-- Footer -->
+ <footer class="w3-container w3-padding-32 bg-light"  style="color: #111;">
+
+
+  
+      <div class="col-lg-1 ">
+      </div>
+      <div class="col-lg-3 col-md-12 col-sm-12 mt-3 ml-auto; w3-ul  "  style="  font-family:Georgia, 'Times New Roman', Times, serif   ">  
+          
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d687.0022297312414!2d40.174775692539306!3d-10.28235222177917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x188d4533a7ebbc81%3A0x8748bb1bfa05214f!2sLigula%20Hospital!5e1!3m2!1sen!2stz!4v1722445508456!5m2!1sen!2stz" 
+            width="320" height="230" style="border:0;"  class="w3-card w3-hover-shadow " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+      </div>
+  
+  
+  
+    
+  
+
+
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>Contact us</h3>
+     
+
+      <ul class="list-unstyled"   style="color: #000;">
+          <li>
+              <span>Steven Ladislaus Makarious</span>
+          </li>
+          <li>
+              <span>P.O Box 520  Mtwara</span>
+          </li><br>
+      
+
+          <li>
+              <span>Mobile Phone Wasap number: +255 715 296 092 </span>
+
+          </li>
+
+          <li>
+              <span><a href="" target="_blank" style="color:#000">stevenabalwambo@gmail.com</span>
+          </li>
+
+      </ul>
+
+    </div>
+  
+    <div class="w3-third" style="color: #000;">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="images (2).png" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Software Developer</span><br>
+          <span>Stevsite Programming</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="favicon2.webp" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Campany</span><br>
+          <span>Welcome to Techmachine</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third"  style="color: #000;">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+      </p>
+    </div>
+
+
+
+  
+  <p  style="color: #000;  text-decoration: none;">Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity;"  style="font-size: 50px; color: rgb(69, 162, 224);"></i>
+  <i class="fa fa-instagram w3-hover-opacity" style="font-size: 50px;  color: rgb(245, 15, 53);"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"  style="font-size: 50px; color: yellow;"></i>
+  <i class="fa fa-twitter w3-hover-opacity"  style="font-size: 50px; color: rgb(73, 167, 230);"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"  style="font-size: 50px; color: rgb(57, 153, 218);;"></i>
+
+  </footer>
+  
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
